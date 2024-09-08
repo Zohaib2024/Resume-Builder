@@ -1,0 +1,51 @@
+#cv-form{
+    display: block;
+}
+
+@media buttonhide {
+    /* Set page size and margins for A4 or letter size */
+    @page {
+        size: A4; /* or size: letter; for US letter */
+        margin: 20mm;
+    }
+
+    /* Ensure the layout fits within one page */
+    .container {
+        max-width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+    }
+
+    /* Adjust font size to fit content on one page */
+    body {
+        font-size: 12px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    /* Remove any unnecessary elements for print */
+    .btn {
+        display: none; /* Hide buttons for print */
+    }
+
+    /* Ensure no page breaks inside important sections */
+    .card, .container, .col-md-4, .col-md-8 {
+        page-break-inside: avoid;
+    }
+    #buttonhide{
+        display: none;
+    }
+}
+
+#cv-Template{
+display: none;
+}
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+.background{
+ background-color: rgb(249, 249, 249);
+}
