@@ -1,0 +1,20 @@
+#cv-form{
+    display: block;
+}
+
+@media print {
+    .print-hide {
+      display: none !important;
+    }
+  }
+
+#cv-Template{
+display: none;
+}
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+.background{
+ background-color: rgb(249, 249, 249);
+}
